@@ -158,7 +158,7 @@
     <section class="bg-black text-white">
         <div class="pt-20 container mx-auto sm: p-5 text-left">
             <HeaderTitle title='TRO EXPRESS'/>
-            <div class="mt-5 divide-y-2 divide-x-0 md:grid grid-cols-2 grid-rows-1 divide-x-2 divide-y-0 divide-gray-600">
+            <div class="mt-5 md:grid grid-cols-2 grid-rows-1">
                 <div class="">
                     <div class="flex flex-row my-5">
                         <Icon cssOptions='basis-1/4' icon={'pin_drop'} />

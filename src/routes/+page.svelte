@@ -27,7 +27,7 @@
 				<div class="w-1/4">
 					<h1 class="text-2xl font-bold text-orange-500">TRO Express</h1>
 				</div>
-                <nav>
+                <nav class="hidden md:block">
                     <ul class="flex flex-row justify-end">
                         <li class="mx-5"><a href="#servicos" on:click|preventDefault={scrollIntoView} class="text-white">Serviços</a></li>
                         <li class="mx-5"><a href="#colaboradores" on:click|preventDefault={scrollIntoView} class="text-white">Colaboradores</a></li>

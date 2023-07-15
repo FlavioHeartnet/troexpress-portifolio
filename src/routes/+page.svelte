@@ -27,6 +27,14 @@
 				<div class="w-1/4">
 					<h1 class="text-2xl font-bold text-orange-500">TRO Express</h1>
 				</div>
+                <nav>
+                    <ul class="flex flex-row justify-end">
+                        <li class="mx-5"><a href="#servicos" on:click|preventDefault={scrollIntoView} class="text-white">Serviços</a></li>
+                        <li class="mx-5"><a href="#colaboradores" on:click|preventDefault={scrollIntoView} class="text-white">Colaboradores</a></li>
+                        <li class="mx-5"><a href="#clientes" on:click|preventDefault={scrollIntoView} class="text-white">Clientes</a></li>
+                        <li class="mx-5"><a href="#contato" on:click|preventDefault={scrollIntoView} class="text-white">Contato</a></li>
+                    </ul>
+                </nav>
 				<div class="w-3/4">
 					<div class="flex justify-end">
 						<button class="btn btn-primary text-orange-500 font-bold">(11) 3603-1367</button>
@@ -82,24 +90,9 @@
 			</GridLayout>
 		</div>
 	</section>
-	<section id="clientes" class="bg-white min-h-screen">
-		<div class="pt-20 container mx-auto sm: p-5 text-center">
-			<HeaderTitle title='Nossos Clientes'/>
-			<GridLayout>
-                <CardLogo image={'./ceadis.png'} />
-                <CardLogo image={'./renner.png'} />
-                <CardLogo image={'./torra.png'} />
-                <CardLogo image={'./caedu.png'} />
-                <CardLogo image={'./c-e-a-logo.png'} />
-                <CardLogo image={'./esplanada-moveis.png'} />
-                <CardLogo image={'./Magalu.png'} />
-            </GridLayout>
-
-		</div>
-	</section>
-    <section class="bg-slate-50 min-h-screen" id="colaboradores">
+    <section id="colaboradores" class="bg-slate-50 min-h-screen bg-cover" style="background-image: url('./background.jpg')" >
         <div class="pt-20 container mx-auto sm: px-5 text-left">
-            <HeaderTitle title='Nossos Colaboradores prontos para melhor atender'/>
+            <HeaderTitle title='Nossos colaboradores estão prontos para lhe melhor atender'/>
             <div class="flex flex-nowrap text-left mt-10 rounded-lg border-2 px-3 my-5 bg-orange-500 text-white">
                 <img src="./man.png" alt="" class=" pl-5 pt-5 hidden lg:block w-2/6"/>
                 <div class="p-10">
@@ -119,7 +112,22 @@
         </div>
 
     </section>
-    <section class="bg-slate-800 bg-cover bg-blend-overlay min-h-screen" style="background-image: url('./bg2.jpg')">
+	<section id="clientes" class="bg-white min-h-screen">
+		<div class="pt-20 container mx-auto sm: p-5 text-center">
+			<HeaderTitle title='Nossos Clientes'/>
+			<GridLayout>
+                <CardLogo image={'./ceadis.png'} />
+                <CardLogo image={'./renner.png'} />
+                <CardLogo image={'./torra.png'} />
+                <CardLogo image={'./caedu.png'} />
+                <CardLogo image={'./c-e-a-logo.png'} />
+                <CardLogo image={'./esplanada-moveis.png'} />
+                <CardLogo image={'./Magalu.png'} />
+            </GridLayout>
+
+		</div>
+	</section>
+    <section id="contato" class="bg-slate-800 bg-cover bg-blend-overlay min-h-screen" style="background-image: url('./bg2.jpg')">
         <div class="pt-20 container mx-auto sm: p-5 text-center">
             <HeaderTitle title='Precisa de ajuda? entre em contato'/>
                 <div class="mt-5 text-left md:p-20">

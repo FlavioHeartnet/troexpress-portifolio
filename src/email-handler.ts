@@ -30,12 +30,13 @@ export type EmailRequest = {
 export async function sendEmail(mailInfo: EmailMessage) {
     const mailOptions: EmailRequest = {
         from: '"TRO Express" <tro.express@troexpress.com.br>', // sender address
-        to: mailInfo.email, // list of receivers
+        to: "tro.express@troexpress.com.br", // list of receivers
         subject: "Solicitação de contato de  "+mailInfo.name, // Subject line // plain text body
         html: `
-        <p>Olá, segue solicitação de contato<p>
+        <p>Olá, segue solicitação de contato - TESTE<p>
             <br>
         <p>Nome: ${mailInfo.name}<p> 
+        <p>Email: ${mailInfo.email}<p>
         <p>Telefone: ${mailInfo.phone}<p>
         <p>Mensagem: ${mailInfo.message}<p>
         `, // html body

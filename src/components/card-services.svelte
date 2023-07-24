@@ -7,8 +7,8 @@
 
 <div class="border-2 rounded-lg m-5 p-5">
 	<Icon icon={icon}/>
-	<div class="ml-5">
+	<div class="mx-2">
 		<h1 class="text-orange-500 text-2xl">{title}</h1>
-		<p class="mt-5">{subtitle}</p>
+		<p class="mt-5 text-justify">{subtitle}</p>
 	</div>
 </div>

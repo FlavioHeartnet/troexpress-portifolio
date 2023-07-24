@@ -49,13 +49,14 @@
 						transition:fade={{ delay: 250, duration: 300 }}
 						class="text-orange-500 text-2lx font-bold"
 					>
-						Logística especializada
+                        SUPERANDO DESAFIOS
 					</p>
 					<h1
 						transition:fade={{ delay: 500, duration: 300 }}
 						class="text-white mt-1 text-3xl md:text-5xl"
 					>
-						O NOSSO COMPROMISSO É A SUA SATISFAÇÃO!
+                    PÉ NA ESTRADA
+                    TRANSPORTANDO PARA SEU LADO
 					</h1>
 				</div>
 				<div />
@@ -66,7 +67,7 @@
 						href="#servicos" on:click|preventDefault={scrollIntoView}
 						transition:fade={{ delay: 750, duration: 300 }}
 						class="bg-orange-500 rounded text-white font-bold p-5"
-						>Descubra o que é logística avançada</a
+						>QUEM NOS SOMOS</a
 					>
 				</div>
 			</div>
@@ -74,13 +75,29 @@
 	</div>
 	<section id="servicos" class="bg-slate-50 min-h-screen">
 		<div class="pt-20 container mx-auto sm: p-5 text-center">
-			<HeaderTitle title='Quem nós somos'/>
-			<p class="mt-5">
-				Somos especializados em serviços de logística e transportes rodoviários no território
-				nacional. Integramos estes fatores de maneira lógica, para melhor atendermos nossos
-				clientes. Priorizamos o comprometimento e satisfação de nossos colaboradores, fazendo-se
-				assim, uma parceria eficaz!
+			<HeaderTitle title='QUEM NÓS SOMOS'/>
+			<p class="mt-5 mb-5 text-justify">
+				O Troexpress é um <b class="text-orange-500">serviço de transporte eficiente e confiável</b>, projetado para atender 
+                às necessidades de <b class="text-orange-500">empresas e indivíduos</b> que desejam enviar mercadorias de forma 
+                <b class="text-orange-500">rápida e segura.</b> Com uma equipe altamente capacitada e veículos modernos, garantimos que suas 
+                encomendas <b class="text-orange-500">cheguem ao destino desejado no prazo estipulado</b>. Além disso, oferecemos 
+                <b class="text-orange-500">rastreamento em tempo real</b> para que você possa acompanhar o status de suas remessas 
+                a qualquer momento. Priorizamos a <b class="text-orange-500">segurança dos produtos transportados</b>, utilizando 
+                embalagens adequadas e <b class="text-orange-500">técnicas especiais</b> para garantir que tudo chegue intacto. 
+                Escolha o <b class="text-orange-500">Troexpress</b> e tenha a certeza de que suas mercadorias serão entregues com 
+                rapidez, segurança e cuidado.
 			</p>
+            <div class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1">
+				<CardServices icon={'language'} title={'MISSÃO'} subtitle={'Superar as expectativas de nossos clientes quanto à qualidade e agilidade na entrega de seus produtos agregando preços competitivos com a agilidade, confiança, credibilidade e eficiência, atendendo às suas necessidades de mobilidade e contribuindo para o desenvolvimento econômico e social das regiões em que atua.'} />
+				<CardServices icon={'track_changes'} title={'VISÃO'} subtitle={'Ser referência no segmento de transportes, logística e armazéns gerais em todo território nacional e atender todas as necessidades de nossos clientes, colaboradores e parceiros, oferecendo soluções inovadoras e sustentáveis para seus clientes, garantindo a satisfação e fidelidade dos mesmos, e se destacando pela excelência operacional e pela qualidade do serviço prestado.'}/>
+				<CardServices icon={'favorite'} title={'VALORES'} subtitle={'Competência, Segurança, Ética, Responsabilidade, Inovação e Compromisso esses são os nossos pilares que trabalhamos diariamente para alcançá-los e entregar ao nossos parceiros.'} />
+			</div>
+            
+		</div>
+	</section>
+    <section id="servicos" class="bg-white min-h-screen">
+        <div class="pt-20 container mx-auto sm: p-5 text-center">
+            <HeaderTitle title='O QUE NÓS OFERECEMOS'/>
 			<GridLayout>
 				<CardServices icon={'local_shipping'} />
 				<CardServices icon={'groups'} title={'Equipe para gestão operacional'} />
@@ -88,11 +105,30 @@
 				<CardServices icon={'home'} title={'Armazenamento / cross-docking'} />
 				<CardServices icon={'settings'} title={'Sistema WMS'} />
 			</GridLayout>
-		</div>
-	</section>
+        </div>
+    </section>
+    <section id="fun-facts" class="min-h-screen bg-cover" style="background-image: url('./shape-bg.jpg')">
+        <div class="pt-20 container mx-auto sm: p-5 text-center">
+            <HeaderTitle title='Nós temos a sua logística coberta'/>
+            <div class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1">
+                <div class="border-2 rounded-lg m-5 p-5">
+                    <h1 class="text-orange-500 text-2xl font-bold">+ 10</h1>
+                    <p class="mt-5 text-justify font-bold">Anos de experiência</p>
+                </div>
+                <div class="border-2 rounded-lg m-5 p-5">
+                    <h1 class="text-orange-500 text-2xl font-bold">+ 100</h1>
+                    <p class="mt-5 text-justify font-bold">Veículos</p>
+                </div>
+                <div class="border-2 rounded-lg m-5 p-5">
+                    <h1 class="text-orange-500 text-2xl font-bold">+ 1000</h1>
+                    <p class="mt-5 text-justify font-bold">Clientes satisfeitos</p>
+                </div>
+        </div>
+        
+    </section>
     <section id="colaboradores" class="bg-slate-50 min-h-screen bg-cover" style="background-image: url('./background.jpg')" >
         <div class="pt-20 container mx-auto sm: px-5 text-left">
-            <HeaderTitle title='Nossos colaboradores estão prontos para lhe melhor atender'/>
+            <HeaderTitle title='Nossos colaboradores estão prontos para melhor lhe atender'/>
             <div class="flex flex-nowrap text-left mt-10 rounded-lg border-2 px-3 my-5 bg-orange-500 text-white">
                 <img src="./man.png" alt="" class=" pl-5 pt-5 hidden lg:block w-2/6"/>
                 <div class="p-10">
@@ -107,10 +143,7 @@
                     </ul>
                 </div>
             </div>
-            
-            
         </div>
-
     </section>
 	<section id="clientes" class="bg-white min-h-screen">
 		<div class="pt-20 container mx-auto sm: p-5 text-center">
@@ -129,7 +162,7 @@
 	</section>
     <section id="contato" class="bg-slate-800 bg-cover bg-blend-overlay min-h-screen" style="background-image: url('./bg2.jpg')">
         <div class="pt-20 container mx-auto sm: p-5 text-center">
-            <HeaderTitle title='Precisa de ajuda? entre em contato'/>
+            <HeaderTitle title='Conte-nos mais sobre suas demandas e como podemos ajudar'/>
                 <div class="mt-5 text-left md:p-20">
                     <form method="post">
                         <div class="flex flex-col">
@@ -155,7 +188,7 @@
                 </div>
         </div>
     </section>
-    <section class="bg-black text-white">
+    <section class="bg-zinc-800 text-white">
         <div class="pt-20 container mx-auto sm: p-5 text-left">
             <HeaderTitle title='TRO EXPRESS'/>
             <div class="mt-5 md:grid grid-cols-2 grid-rows-1">

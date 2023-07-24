@@ -131,7 +131,7 @@
         <div class="pt-20 container mx-auto sm: p-5 text-center">
             <HeaderTitle title='Precisa de ajuda? entre em contato'/>
                 <div class="mt-5 text-left md:p-20">
-                    <form action="">
+                    <form method="post">
                         <div class="flex flex-col">
                             <label class="text-orange-500 my-2" for="name">Nome</label>
                             <input type="text" name="name" id="name" class="border-2 rounded-lg p-2" />

@@ -116,7 +116,7 @@
 			</GridLayout>
         </div>
     </section>
-    <section id="fun-facts" class="min-h-screen bg-cover" style="background-image: url('./shape-bg.jpg')">
+    <section id="fun-facts" class="bg-cover" style="background-image: url('./shape-bg.jpg')">
         <div class="pt-20 container mx-auto sm: p-5 text-center">
             <HeaderTitle title='Somos especialistas em transporte'/>
             <h1 class="text-4xl md:text-6xl">Pode confiar, nós temos a sua logística coberta.</h1>

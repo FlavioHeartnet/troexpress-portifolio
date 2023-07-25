@@ -198,25 +198,29 @@
                 </div>
         </div>
     </section>
-    <section class="bg-zinc-800 text-white">
+    <section class="bg-zinc-800 text-gray-400">
         <div class="pt-20 container mx-auto sm: p-5 text-left">
-            <img class="drop-shadow-2xl w-20" src="./logo.png" alt="">
+            <div class="flex flex-row my-5">
+                <img class="drop-shadow-2xl w-20" src="./logo.png" alt=""><h1 class="text-2xl font-bold mt-5">TRO Express</h1>
+            </div>
+              
+            <p class="font-bold">Seu negócio não pode parar. Confie em nossa transportadora para entregar seus produtos com segurança, agilidade e pontualidade.</p>
             <div class="mt-5 md:grid grid-cols-2 grid-rows-1">
                 <div class="">
                     <div class="flex flex-row my-5">
-                        <Icon cssOptions='basis-1/4' icon={'pin_drop'} />
-                        <p class="basis-1/2 font-bold">RUA GARDÊNIA, 345 - JD. DAS FLORES -
+                        <Icon cssOptions='basis' icon={'pin_drop'} />
+                        <p class="basis-1/2">RUA GARDÊNIA, 345 - JD. DAS FLORES -
                             OSASCO - SP</p>
                     </div>
                 
                     <div class="flex flex-row my-5">
-                        <Icon cssOptions='basis-1/4' icon={'phone_iphone'} />
-                        <p class="basis-1/2 mt-3"><b>(11) 3603-1367</b></p>
+                        <Icon cssOptions='basis' icon={'phone_iphone'} />
+                        <p class="basis-1/2 mt-3">(11) 3603-1367</p>
                     </div>
                     <div class="flex flex-row my-5">
-                        <Icon cssOptions='basis-1/4' icon={'mail'} />
+                        <Icon cssOptions='basis' icon={'mail'} />
                         <p class="basis-1/2 mt-3">
-                        <b>TRO.EXPRESS@TROEXPRESS.COM.BR</b></p>
+                        TRO.EXPRESS@TROEXPRESS.COM.BR</p>
                     </div>
                      
                 </div>

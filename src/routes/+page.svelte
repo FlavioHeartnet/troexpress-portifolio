@@ -21,7 +21,9 @@
 		init = true;
 	});
 </script>
-
+<svelte:head>
+	<title>TRO Express</title>
+</svelte:head>
 {#if init}
 	<div class="min-h-screen w-full bg-cover" style="background-image: url('./background.jpg')">
 		<div class="pt-5 container mx-auto p-5">

@@ -136,7 +136,7 @@
         </div>
         
     </section>
-    <section id="colaboradores" class="bg-slate-50 min-h-screen bg-cover" style="background-image: url('./background.jpg')" >
+    <section id="colaboradores" class="bg-slate-50 bg-cover pb-5" style="background-image: url('./background.jpg')" >
         <div class="pt-20 container mx-auto sm: px-5 text-left">
             <HeaderTitle title='Nossos colaboradores estão prontos para melhor lhe atender'/>
             <div class="flex flex-nowrap text-left mt-10 rounded-lg border-2 px-3 my-5 bg-orange-500 text-white">

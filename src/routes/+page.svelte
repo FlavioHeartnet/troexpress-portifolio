@@ -6,6 +6,7 @@
     import HeaderTitle from '../components/header-title.svelte';
     import GridLayout from '../components/grid-layout.svelte';
     import Icon from '../components/icon.svelte';
+	import Countup from '../components/countup.svelte';
 	let init = false;
     // @ts-ignore
     function scrollIntoView({ target }) {
@@ -25,11 +26,12 @@
 		<div class="pt-5 container mx-auto p-5">
 			<div class="flex space-between">
 				<div class="w-1/4">
-					<h1 class="text-2xl font-bold text-orange-500">TRO Express</h1>
+					<img class="drop-shadow-2xl" src="./logo.png" alt="">
 				</div>
                 <nav class="hidden md:block">
                     <ul class="flex flex-row justify-end">
-                        <li class="mx-5"><a href="#servicos" on:click|preventDefault={scrollIntoView} class="text-white">Serviços</a></li>
+                        <li class="mx-5"><a href="#servicos" on:click|preventDefault={scrollIntoView} class="text-white">Sobre nós</a></li>
+                        <li class="mx-5"><a href="#oferecemos" on:click|preventDefault={scrollIntoView} class="text-white">Serviços</a></li>
                         <li class="mx-5"><a href="#colaboradores" on:click|preventDefault={scrollIntoView} class="text-white">Colaboradores</a></li>
                         <li class="mx-5"><a href="#clientes" on:click|preventDefault={scrollIntoView} class="text-white">Clientes</a></li>
                         <li class="mx-5"><a href="#contato" on:click|preventDefault={scrollIntoView} class="text-white">Contato</a></li>
@@ -95,7 +97,7 @@
             
 		</div>
 	</section>
-    <section id="servicos" class="bg-white min-h-screen">
+    <section id="oferecemos" class="bg-white min-h-screen">
         <div class="pt-20 container mx-auto sm: p-5 text-center">
             <HeaderTitle title='O QUE NÓS OFERECEMOS'/>
 			<GridLayout>
@@ -110,19 +112,20 @@
     </section>
     <section id="fun-facts" class="min-h-screen bg-cover" style="background-image: url('./shape-bg.jpg')">
         <div class="pt-20 container mx-auto sm: p-5 text-center">
-            <HeaderTitle title='Nós temos a sua logística coberta'/>
+            <HeaderTitle title='Somos especialistas em transporte'/>
+            <h1 class="text-4xl md:text-6xl">Pode confiar, nós temos a sua logística coberta.</h1>
             <div class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1">
-                <div class="border-2 rounded-lg m-5 p-5">
-                    <h1 class="text-orange-500 text-2xl font-bold">+ 10</h1>
-                    <p class="mt-5 text-justify font-bold">Anos de experiência</p>
+                <div class="m-5 p-5">
+                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={10}/></h1>
+                    <p class="mt-5 text-center font-bold">Anos de experiência</p>
                 </div>
-                <div class="border-2 rounded-lg m-5 p-5">
-                    <h1 class="text-orange-500 text-2xl font-bold">+ 100</h1>
-                    <p class="mt-5 text-justify font-bold">Veículos</p>
+                <div class="m-5 p-5">
+                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={100}/></h1>
+                    <p class="mt-5 text-center font-bold">Veículos</p>
                 </div>
-                <div class="border-2 rounded-lg m-5 p-5">
-                    <h1 class="text-orange-500 text-2xl font-bold">+ 1000</h1>
-                    <p class="mt-5 text-justify font-bold">Clientes satisfeitos</p>
+                <div class="m-5 p-5">
+                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={1000}/></h1>
+                    <p class="mt-5 text-center font-bold">Clientes satisfeitos</p>
                 </div>
         </div>
         

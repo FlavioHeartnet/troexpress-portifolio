@@ -27,7 +27,7 @@
 		<div class="pt-5 container mx-auto p-5">
 			<div class="flex space-between">
 				<div class="w-1/4">
-					<img class="drop-shadow-2xl" src="./logo.png" alt="">
+					<img class="drop-shadow-2xl w-20" src="./logo.png" alt="">
 				</div>
                 <nav class="hidden md:block">
                     <ul class="flex flex-row justify-end">
@@ -52,24 +52,31 @@
 						transition:fly={{ delay: 400, y: 100, easing: backOut }}
 						class="text-orange-500 text-2lx font-bold"
 					>
-                        SUPERANDO DESAFIOS
+                        Logística e Transporte
 					</p>
 					<h1
 						transition:fly={{ delay: 500, y: 100, easing: backOut }}
 						class="text-white mt-1 text-3xl xl:text-5xl md:text-4xl"
 					>
-                    PÉ NA ESTRADA
                     TRANSPORTANDO PARA SEU LADO
 					</h1>
+                    <div class="mx-auto mt-10 hidden lg:block">
+                        <a
+                            href="#servicos" on:click|preventDefault={scrollIntoView}
+                            transition:fade={{ delay: 750, duration: 300 }}
+                            class="bg-orange-500 rounded text-white font-bold p-5"
+                            >QUEM NOS SOMOS</a
+                        >
+                    </div>
 				</div>
-                <div class="overflow-hidden w-full h-[44vh] relative top-[3.5em] xl:h-[66vh] lg:h-[55vh]">
+                <div class="overflow-hidden w-full h-[44vh] relative top-[3.5em] xl:h-[86vh] lg:h-[66vh] sm:h-[30vh]">
                     <img
                     transition:fly={{ delay: 850, x: 100, duration: 1000, easing: backOut }} 
                     class="drop-shadow-2xl absolute left-1/2 md:left-0" src="./truck.png" alt="">
                 </div>
 				<div />
 			</div>
-			<div class="grid mt-0">
+			<div class="grid mt-0 xl: mt-20 lg:hidden">
 				<div class="mx-auto">
 					<a
 						href="#servicos" on:click|preventDefault={scrollIntoView}

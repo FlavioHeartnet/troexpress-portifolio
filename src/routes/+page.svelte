@@ -200,7 +200,7 @@
     </section>
     <section class="bg-zinc-800 text-white">
         <div class="pt-20 container mx-auto sm: p-5 text-left">
-            <HeaderTitle title='TRO EXPRESS'/>
+            <img class="drop-shadow-2xl w-20" src="./logo.png" alt="">
             <div class="mt-5 md:grid grid-cols-2 grid-rows-1">
                 <div class="">
                     <div class="flex flex-row my-5">
@@ -211,12 +211,12 @@
                 
                     <div class="flex flex-row my-5">
                         <Icon cssOptions='basis-1/4' icon={'phone_iphone'} />
-                        <p class="basis-1/2">FONE: <b>(11) 3603-1367</b></p>
+                        <p class="basis-1/2 mt-3"><b>(11) 3603-1367</b></p>
                     </div>
                     <div class="flex flex-row my-5">
                         <Icon cssOptions='basis-1/4' icon={'mail'} />
-                        <p class="basis-1/2">
-                            EMAIL: <b>TRO.EXPRESS@TROEXPRESS.COM.BR</b></p>
+                        <p class="basis-1/2 mt-3">
+                        <b>TRO.EXPRESS@TROEXPRESS.COM.BR</b></p>
                     </div>
                      
                 </div>

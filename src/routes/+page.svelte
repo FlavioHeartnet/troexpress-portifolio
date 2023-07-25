@@ -112,7 +112,7 @@
 				<CardServices icon={'lock'} title={'Mercadoria assegurada'} subtitle={'Mercadorias asseguradas pela Porto seguro, garantindo segurança e tranquilidade para você.'}/>
 				<CardServices icon={'home'} title={'Armazenamento / cross-docking'} subtitle={"Nosso objetivo é realizar todo o processo com qualidade e no menor tempo possível. Oferecemos Serviços de Cross Doking para CD’s (centros de distribuições), empresas de logística e transportadoras que necessitam deste serviço para suas operações, agilizamos a movimentação dos produtos ou mercadorias do ponto de recebimento ou coleta, diretamente para o ponto de expedição e entrega, com tempo de estoque limitado contamos com uma equipe para a preparação/separação de mercadorias, agendamento das entregas, carregamento e distribuição."} />
 				<CardServices icon={'settings'} title={'Sistema WMS'} subtitle={'sistema de gerenciamento de armazém integrado para controle de rotação de estoque.'} />
-                <CardServices icon={'factory'} title={'Nossas filiais'} subtitle={'Temos base na grandes capitais do pais como São Paulo que é matris, Rio de janeiro, Rio grande do sul Santa  Catarina, Parana.'} />
+                <CardServices icon={'factory'} title={'Nossas filiais'} subtitle={'Temos base na grandes capitais do pais como São Paulo que é matris, Rio de janeiro, Rio grande do sul, Santa  Catarina e Parana.'} />
 			</GridLayout>
         </div>
     </section>

@@ -227,7 +227,7 @@
             </div>
             <footer>
                 <div class="mt-5 text-center">
-                    <p class="text-xs">© 2023 TRO EXPRESS. TODOS OS DIREITOS RESERVADOS.</p>
+                    <p class="text-xs">© 2023 TRO EXPRESS - SERVIÇOS DE LOGÍSTICA. TODOS OS DIREITOS RESERVADOS.</p>
                 </div>
             </footer>
     </section>

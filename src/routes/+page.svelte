@@ -45,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="grid min-h-screen pt-5 container mx-auto p-0 sm: p-5">
+		<div class="grid min-h-screen pt-5 container mx-auto p-0">
 			<div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 content-center h-4/5 pt-20">
 				<div class="ml-5">
 					<p
@@ -56,16 +56,16 @@
 					</p>
 					<h1
 						transition:fly={{ delay: 500, y: 100, easing: backOut }}
-						class="text-white mt-1 text-3xl md:text-5xl"
+						class="text-white mt-1 text-3xl xl:text-5xl md:text-4xl"
 					>
                     PÉ NA ESTRADA
                     TRANSPORTANDO PARA SEU LADO
 					</h1>
 				</div>
-                <div class="overflow-hidden w-full h-[44vh] relative top-[3.5em]">
+                <div class="overflow-hidden w-full h-[44vh] relative top-[3.5em] xl:h-[66vh] lg:h-[55vh]">
                     <img
                     transition:fly={{ delay: 850, x: 100, duration: 1000, easing: backOut }} 
-                    class="drop-shadow-2xl absolute left-1/2" src="./truck.png" alt="">
+                    class="drop-shadow-2xl absolute left-1/2 md:left-0" src="./truck.png" alt="">
                 </div>
 				<div />
 			</div>
@@ -95,7 +95,7 @@
                 Escolha o <b class="text-orange-500">Troexpress</b> e tenha a certeza de que suas mercadorias serão entregues com 
                 rapidez, segurança e cuidado.
 			</p>
-            <div class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1">
+            <div class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1">
 				<CardServices icon={'language'} title={'MISSÃO'} subtitle={'Superar as expectativas de nossos clientes quanto à qualidade e agilidade na entrega de seus produtos agregando preços competitivos com a agilidade, confiança, credibilidade e eficiência, atendendo às suas necessidades de mobilidade e contribuindo para o desenvolvimento econômico e social das regiões em que atua.'} />
 				<CardServices icon={'track_changes'} title={'VISÃO'} subtitle={'Ser referência no segmento de transportes, logística e armazéns gerais em todo território nacional e atender todas as necessidades de nossos clientes, colaboradores e parceiros, oferecendo soluções inovadoras e sustentáveis para seus clientes, garantindo a satisfação e fidelidade dos mesmos, e se destacando pela excelência operacional e pela qualidade do serviço prestado.'}/>
 				<CardServices icon={'favorite'} title={'VALORES'} subtitle={'Competência, Segurança, Ética, Responsabilidade, Inovação e Compromisso esses são os nossos pilares que trabalhamos diariamente para alcançá-los e entregar ao nossos parceiros.'} />

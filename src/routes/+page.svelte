@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
+    import { backOut } from 'svelte/easing'
 	import CardServices from '../components/card-services.svelte';
     import CardLogo from '../components/card-logo.svelte';
     import HeaderTitle from '../components/header-title.svelte';
@@ -44,26 +45,31 @@
 				</div>
 			</div>
 		</div>
-		<div class="grid content-center min-h-screen pt-5 container mx-auto sm: p-5">
+		<div class="grid min-h-screen pt-5 container mx-auto p-0 sm: p-5">
 			<div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 content-center h-4/5 pt-20">
-				<div>
+				<div class="ml-5">
 					<p
-						transition:fade={{ delay: 250, duration: 300 }}
+						transition:fly={{ delay: 400, y: 100, easing: backOut }}
 						class="text-orange-500 text-2lx font-bold"
 					>
                         SUPERANDO DESAFIOS
 					</p>
 					<h1
-						transition:fade={{ delay: 500, duration: 300 }}
+						transition:fly={{ delay: 500, y: 100, easing: backOut }}
 						class="text-white mt-1 text-3xl md:text-5xl"
 					>
                     PÉ NA ESTRADA
                     TRANSPORTANDO PARA SEU LADO
 					</h1>
 				</div>
+                <div class="overflow-hidden w-full h-[44vh] relative top-[3.5em]">
+                    <img
+                    transition:fly={{ delay: 850, x: 100, duration: 1000, easing: backOut }} 
+                    class="drop-shadow-2xl absolute left-1/2" src="./truck.png" alt="">
+                </div>
 				<div />
 			</div>
-			<div class="grid content-end h-56 mt-0">
+			<div class="grid mt-0">
 				<div class="mx-auto">
 					<a
 						href="#servicos" on:click|preventDefault={scrollIntoView}

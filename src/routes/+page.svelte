@@ -26,7 +26,7 @@
 	<title>TRO Express</title>
 </svelte:head>
 <svelte:window bind:scrollY={y} />
-<h1 class="fixed text-5xl">{y}</h1>
+<!--<h1 class="fixed text-5xl">{y}</h1>-->
 {#if init}
 	<div class="min-h-screen w-full bg-cover" style="background-image: url('./background.jpg')">
 		<div class="pt-5 container mx-auto p-5">

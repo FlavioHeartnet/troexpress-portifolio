@@ -8,8 +8,8 @@
     import GridLayout from '../components/grid-layout.svelte';
     import Icon from '../components/icon.svelte';
 	import Countup from '../components/countup.svelte';
+    import Saos from "saos";
 	let init = false;
-    let y = 0;
     // @ts-ignore
     function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
@@ -25,8 +25,6 @@
 <svelte:head>
 	<title>TRO Express</title>
 </svelte:head>
-<svelte:window bind:scrollY={y} />
-<!--<h1 class="fixed text-5xl">{y}</h1>-->
 {#if init}
 	<div class="min-h-screen w-full bg-cover" style="background-image: url('./background.jpg')">
 		<div class="pt-5 container mx-auto p-5">
@@ -96,43 +94,44 @@
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 	<section id="servicos" class="bg-slate-50 min-h-screen">
-    {#if y > 300}
 		<div class="pt-20 container mx-auto sm: p-5 text-center">
-			<HeaderTitle title='QUEM NÓS SOMOS'/>
-			<p transition:fade={{delay: 200, duration: 500}} class="mt-5 mb-5 text-justify">
-				O Troexpress é um <b class="text-orange-500">serviço de transporte eficiente e confiável</b>, projetado para atender 
-                às necessidades de <b class="text-orange-500">empresas e indivíduos</b> que desejam enviar mercadorias de forma 
-                <b class="text-orange-500">rápida e segura.</b> Com uma equipe altamente capacitada e veículos modernos, garantimos que suas 
-                encomendas <b class="text-orange-500">cheguem ao destino desejado no prazo estipulado</b>. Além disso, oferecemos 
-                <b class="text-orange-500">rastreamento em tempo real</b> para que você possa acompanhar o status de suas remessas 
-                a qualquer momento. Priorizamos a <b class="text-orange-500">segurança dos produtos transportados</b>, utilizando 
-                embalagens adequadas e <b class="text-orange-500">técnicas especiais</b> para garantir que tudo chegue intacto. 
-                Escolha o <b class="text-orange-500">Troexpress</b> e tenha a certeza de que suas mercadorias serão entregues com 
-                rapidez, segurança e cuidado.
-			</p>
-            <div transition:fade={{delay: 400, duration: 500}} class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1">
-				<CardServices icon={'language'} title={'MISSÃO'} subtitle={'Superar as expectativas de nossos clientes quanto à qualidade e agilidade na entrega de seus produtos agregando preços competitivos com a agilidade, confiança, credibilidade e eficiência, atendendo às suas necessidades de mobilidade e contribuindo para o desenvolvimento econômico e social das regiões em que atua.'} />
-				<CardServices icon={'track_changes'} title={'VISÃO'} subtitle={'Ser referência no segmento de transportes, logística e armazéns gerais em todo território nacional e atender todas as necessidades de nossos clientes, colaboradores e parceiros, oferecendo soluções inovadoras e sustentáveis para seus clientes, garantindo a satisfação e fidelidade dos mesmos, e se destacando pela excelência operacional e pela qualidade do serviço prestado.'}/>
-				<CardServices icon={'favorite'} title={'VALORES'} subtitle={'Competência, Segurança, Ética, Responsabilidade, Inovação e Compromisso esses são os nossos pilares que trabalhamos diariamente para alcançá-los e entregar ao nossos parceiros.'} />
+            <Saos once={true} animation={'fade-in 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
+                <HeaderTitle title='QUEM NÓS SOMOS'/>
+                <p class="mt-5 mb-5 text-justify">
+                    O Troexpress é um <b class="text-orange-500">serviço de transporte eficiente e confiável</b>, projetado para atender 
+                    às necessidades de <b class="text-orange-500">empresas e indivíduos</b> que desejam enviar mercadorias de forma 
+                    <b class="text-orange-500">rápida e segura.</b> Com uma equipe altamente capacitada e veículos modernos, garantimos que suas 
+                    encomendas <b class="text-orange-500">cheguem ao destino desejado no prazo estipulado</b>. Além disso, oferecemos 
+                    <b class="text-orange-500">rastreamento em tempo real</b> para que você possa acompanhar o status de suas remessas 
+                    a qualquer momento. Priorizamos a <b class="text-orange-500">segurança dos produtos transportados</b>, utilizando 
+                    embalagens adequadas e <b class="text-orange-500">técnicas especiais</b> para garantir que tudo chegue intacto. 
+                    Escolha o <b class="text-orange-500">Troexpress</b> e tenha a certeza de que suas mercadorias serão entregues com 
+                    rapidez, segurança e cuidado.
+                </p>
+            </Saos>
+			
+            <div class="mt-5 grid grid-flow-row-dense grid-rows-1 grid-cols-1 justify-items-center xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1">
+				<CardServices  icon={'language'} title={'MISSÃO'} subtitle={'Superar as expectativas de nossos clientes quanto à qualidade e agilidade na entrega de seus produtos agregando preços competitivos com a agilidade, confiança, credibilidade e eficiência, atendendo às suas necessidades de mobilidade e contribuindo para o desenvolvimento econômico e social das regiões em que atua.'} />
+				<CardServices  icon={'track_changes'} title={'VISÃO'} subtitle={'Ser referência no segmento de transportes, logística e armazéns gerais em todo território nacional e atender todas as necessidades de nossos clientes, colaboradores e parceiros, oferecendo soluções inovadoras e sustentáveis para seus clientes, garantindo a satisfação e fidelidade dos mesmos, e se destacando pela excelência operacional e pela qualidade do serviço prestado.'}/>
+				<CardServices  icon={'favorite'} title={'VALORES'} subtitle={'Competência, Segurança, Ética, Responsabilidade, Inovação e Compromisso esses são os nossos pilares que trabalhamos diariamente para alcançá-los e entregar ao nossos parceiros.'} />
 			</div>
 		</div>
-        {/if} 
 	</section>
     
     <section id="oferecemos" class="bg-white min-h-screen">
-        {#if y > 900}
         <div class="pt-20 container mx-auto sm: p-5 text-center">
-            <HeaderTitle title='O QUE NÓS OFERECEMOS'/>
+            
+                <HeaderTitle title='O QUE NÓS OFERECEMOS'/>
 			<GridLayout>
-				<CardServices animationDelay={100} icon={'local_shipping'} subtitle={'Contamos com frota própria e 	terceirizada colaboradores dedicados, dispomos de veículos diversificados desde Fiorinos a Carretas e, por isso trabalhamos com grande variedade de Carga. Dispomos de Baús Cabideiros com Redes e Divisórias para contenção, separação e proteção das cargas. Nossos veículos possuem travas de proteção que são acionadas através da gerenciadora de risco no caso de qualquer problema. Os mesmos saem devidamente lacrados e rastreados da origem de carregamento até o destino. Nosso sistema de gerenciamento de risco é informatizado, os veículos são monitorados por uma central 24 horas.'} />
-				<CardServices animationDelay={300} icon={'groups'} title={'Equipe para gestão operacional'}  subtitle={"Atuamos no setor de transportes desde 2010 e estamos sempre em busca de novos desafios, nos renovando para atender da melhor forma nossos clientes e parceiros. Dispomos de equipe própria dentro dos CD’s de nossos clientes para conferência, carregamento e liberação de toda documentação para que os veículos possam seguir suas entregas com agilidade. Rastreamento e Monitoramento Nossos veículos possuem rastreamento e monitoramento 24 horas pro dia, garantindo a segurança e a qualidade no tempo de entrega, trazendo conforto ao nosso cliente. "}/>
-				<CardServices animationDelay={400} icon={'lock'} title={'Mercadoria assegurada'} subtitle={'Mercadorias asseguradas pela Porto seguro, garantindo segurança e tranquilidade para você.'}/>
-				<CardServices animationDelay={500} icon={'home'} title={'Armazenamento / cross-docking'} subtitle={"Nosso objetivo é realizar todo o processo com qualidade e no menor tempo possível. Oferecemos Serviços de Cross Doking para CD’s (centros de distribuições), empresas de logística e transportadoras que necessitam deste serviço para suas operações, agilizamos a movimentação dos produtos ou mercadorias do ponto de recebimento ou coleta, diretamente para o ponto de expedição e entrega, com tempo de estoque limitado contamos com uma equipe para a preparação/separação de mercadorias, agendamento das entregas, carregamento e distribuição."} />
-				<CardServices animationDelay={600} icon={'settings'} title={'Sistema WMS'} subtitle={'sistema de gerenciamento de armazém integrado para controle de rotação de estoque.'} />
-                <CardServices animationDelay={700} icon={'factory'} title={'Nossas filiais'} subtitle={'Temos base na grandes capitais do pais como São Paulo que é matris, Rio de janeiro, Rio grande do sul, Santa  Catarina e Parana.'} />
+				<CardServices  icon={'local_shipping'} subtitle={'Contamos com frota própria e 	terceirizada colaboradores dedicados, dispomos de veículos diversificados desde Fiorinos a Carretas e, por isso trabalhamos com grande variedade de Carga. Dispomos de Baús Cabideiros com Redes e Divisórias para contenção, separação e proteção das cargas. Nossos veículos possuem travas de proteção que são acionadas através da gerenciadora de risco no caso de qualquer problema. Os mesmos saem devidamente lacrados e rastreados da origem de carregamento até o destino. Nosso sistema de gerenciamento de risco é informatizado, os veículos são monitorados por uma central 24 horas.'} />
+				<CardServices  icon={'groups'} title={'Equipe para gestão operacional'}  subtitle={"Atuamos no setor de transportes desde 2010 e estamos sempre em busca de novos desafios, nos renovando para atender da melhor forma nossos clientes e parceiros. Dispomos de equipe própria dentro dos CD’s de nossos clientes para conferência, carregamento e liberação de toda documentação para que os veículos possam seguir suas entregas com agilidade. Rastreamento e Monitoramento Nossos veículos possuem rastreamento e monitoramento 24 horas pro dia, garantindo a segurança e a qualidade no tempo de entrega, trazendo conforto ao nosso cliente. "}/>
+				<CardServices  icon={'lock'} title={'Mercadoria assegurada'} subtitle={'Mercadorias asseguradas pela Porto seguro, garantindo segurança e tranquilidade para você.'}/>
+				<CardServices  icon={'home'} title={'Armazenamento / cross-docking'} subtitle={"Nosso objetivo é realizar todo o processo com qualidade e no menor tempo possível. Oferecemos Serviços de Cross Doking para CD’s (centros de distribuições), empresas de logística e transportadoras que necessitam deste serviço para suas operações, agilizamos a movimentação dos produtos ou mercadorias do ponto de recebimento ou coleta, diretamente para o ponto de expedição e entrega, com tempo de estoque limitado contamos com uma equipe para a preparação/separação de mercadorias, agendamento das entregas, carregamento e distribuição."} />
+				<CardServices  icon={'settings'} title={'Sistema WMS'} subtitle={'sistema de gerenciamento de armazém integrado para controle de rotação de estoque.'} />
+                <CardServices  icon={'factory'} title={'Nossas filiais'} subtitle={'Temos base na grandes capitais do pais como São Paulo que é matris, Rio de janeiro, Rio grande do sul, Santa  Catarina e Parana.'} />
 			</GridLayout>
+            
         </div>
-        {/if}
     </section>
    
     <section id="fun-facts" class="bg-cover" style="background-image: url('./shape-bg.jpg')">

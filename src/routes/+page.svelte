@@ -68,7 +68,7 @@
                             href="#servicos" on:click|preventDefault={scrollIntoView}
                             transition:fade={{ delay: 750, duration: 300 }}
                             class="bg-orange-500 rounded text-white font-bold p-5"
-                            >QUEM NOS SOMOS</a
+                            >QUEM NÓS SOMOS</a
                         >
                     </div>
 				</div>
@@ -85,7 +85,7 @@
 						href="#servicos" on:click|preventDefault={scrollIntoView}
 						transition:fade={{ delay: 750, duration: 300 }}
 						class="bg-orange-500 rounded text-white font-bold p-5"
-						>QUEM NOS SOMOS</a
+						>QUEM NÓS SOMOS</a
 					>
 				</div>
 			</div>

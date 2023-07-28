@@ -30,7 +30,7 @@
 		<div class="pt-5 container mx-auto p-5">
 			<div class="flex space-between">
 				<div class="w-1/4">
-					<img class="drop-shadow-2xl w-20" src="./logo.png" alt="">
+					<img class="drop-shadow-2xl w-28" src="./logo.png" alt="">
 				</div>
                 <nav class="hidden md:block">
                     <ul class="flex flex-row justify-end">
@@ -98,7 +98,7 @@
             <Saos once={true} animation={'fade-in 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
                 <HeaderTitle title='QUEM NÓS SOMOS'/>
                 <p class="mt-5 mb-5 text-justify">
-                    O Troexpress é um <b class="text-orange-500">serviço de transporte eficiente e confiável</b>, projetado para atender 
+                    A Tro express é um <b class="text-orange-500">serviço de transporte eficiente e confiável</b>, projetado para atender 
                     às necessidades de <b class="text-orange-500">empresas e indivíduos</b> que desejam enviar mercadorias de forma 
                     <b class="text-orange-500">rápida e segura.</b> Com uma equipe altamente capacitada e veículos modernos, garantimos que suas 
                     encomendas <b class="text-orange-500">cheguem ao destino desejado no prazo estipulado</b>. Além disso, oferecemos 
@@ -144,12 +144,12 @@
                     <p class="mt-5 text-center font-bold">Anos de experiência</p>
                 </div>
                 <div class="m-5 p-5">
-                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={100}/></h1>
+                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={120}/></h1>
                     <p class="mt-5 text-center font-bold">Veículos</p>
                 </div>
                 <div class="m-5 p-5">
-                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={1000}/></h1>
-                    <p class="mt-5 text-center font-bold">Clientes satisfeitos</p>
+                    <h1 class="text-orange-500 text-4xl font-bold">+ <Countup value={20000}/></h1>
+                    <p class="mt-5 text-center font-bold">Lojas abastecidas</p>
                 </div>
         </div>
         

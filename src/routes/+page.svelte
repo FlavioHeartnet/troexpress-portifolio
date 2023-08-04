@@ -184,9 +184,9 @@
                 <CardLogo image={'./c-e-a-logo.png'} />
                 <CardLogo image={'./esplanada-moveis.png'} />
                 <CardLogo image={'./Magalu.png'} />
-                <CardLogo image={'./youcom.png'} />
+                <!-- <CardLogo image={'./youcom.png'} />
                 <CardLogo image={'./ashua.png'} />
-                <CardLogo image={'./camicado.png'} />
+                <CardLogo image={'./camicado.png'} /> -->
             </GridLayout>
 
 		</div>

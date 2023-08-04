@@ -75,7 +75,7 @@
                 <div class="overflow-hidden w-full h-[44vh] relative top-[3.5em] xl:h-[86vh] lg:h-[66vh] sm:h-[30vh]">
                     <img
                     transition:fly={{ delay: 850, x: 100, duration: 1000, easing: backOut }} 
-                    class="drop-shadow-2xl absolute left-1/2 md:left-0" src="./truck.png" alt="">
+                    class="absolute left-1/2 md:left-0" src="./truck.png" alt="">
                 </div>
 				<div />
 			</div>
